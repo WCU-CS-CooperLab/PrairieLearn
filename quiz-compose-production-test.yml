@@ -1,0 +1,16 @@
+version: '3'
+services:
+  prairielearnProduction:
+    image: prairielearn/prairielearn
+    volumes:
+       - /home/quiz/PrairieLearn:/PrairieLearn
+       - /home/quiz/postgres:/var/postgres
+       - /home/quiz/.ssh:/root/.ssh
+       - /var/run/docker.sock:/var/run/docker.sock
+       - ${HOME}/pl_ag_jobs:/jobs
+    ports:
+       - 3000:3000
+    working_dir: /PrairieLearn
+    environment:
+       - HOST_JOBS_DIR=${HOME}/pl_ag_jobs
+       - NODE_ENV=production
