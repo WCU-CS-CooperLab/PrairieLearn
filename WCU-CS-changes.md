@@ -10,7 +10,7 @@
 8. set up ssl for oauth
 9. made changes so only WCUPA email would work
    - [apps/prairielearn/src/pages/authCallbackOAuth2/authCallbackOAuth2.js](apps/prairielearn/src/pages/authCallbackOAuth2/authCallbackOAuth2.js)
-	 - [apps/prairielearn/src/pages/authLogin/authLogin.html.ts](apps/prairielearn/src/pages/authLogin/authLogin.html.ts)
+   - [apps/prairielearn/src/pages/authLogin/authLogin.html.ts](apps/prairielearn/src/pages/authLogin/authLogin.html.ts)
 10. set up admin access
 11. set up csc240 prairielearn course with github deploy key for our server.
 12. added csc240 to our server prairielearn using admin page
