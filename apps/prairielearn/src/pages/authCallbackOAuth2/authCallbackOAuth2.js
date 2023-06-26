@@ -67,6 +67,10 @@ router.get(
     logger.verbose('Got Google auth identity: ' + JSON.stringify(identity));
     assert(identity.email);
 
+    if(!identity.email.toUpperCase().includes("@WCUPA.EDU")){
+      throw new Error('Please use a West Chester of University email (@wcupa.edu). Click PrairieLearn Home.');
+    }
+    
     let authnParams = {
       uid: identity.email,
       name: identity.name || identity.email,
