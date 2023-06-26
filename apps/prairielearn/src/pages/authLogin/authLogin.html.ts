@@ -113,7 +113,7 @@ export function AuthLogin({ institutionAuthnProviders, service, resLocals }: Aut
             <div>
               <h1 class="text-center">PrairieLearn</h1>
               <h2 class="text-center subheader">
-                Sign in ${service ? `to continue to ${service}` : ''}
+                Sign in using wcupa.edu google email :
               </h2>
               <div class="login-methods mt-5">
                 ${resLocals.devMode
